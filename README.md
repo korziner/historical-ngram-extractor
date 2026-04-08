@@ -24,3 +24,4 @@ Options:
 zstdcat 4.MIN_FREQ2_multithread.tsv.zst|awk '$NF>9 && length($0)>33'|column -t|sort -rnk5
 zstdcat 5.MIN_FREQ2_multithread.tsv.zst|awk '$NF>9 && length($0)>55'|column -t|sort -rnk6
 ```
+ъ в конце добавлен постобработчиком стеммера не случайно, так повышаеся вероятность ugrep -Z найти строку с ошибками OCR/HTR 
